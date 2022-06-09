@@ -8,6 +8,7 @@
  */
 void greet(String name) {
   // Your code here
+  print("Hello $name");
 }
 
 /**
@@ -21,6 +22,13 @@ void greet(String name) {
  */
 bool isOdd(int n) {
   // Your code here
+  if (n % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+
+  // return (n % 2 == 0)
 }
 
 /**
@@ -34,6 +42,11 @@ bool isOdd(int n) {
  */
 int oddsSmallerThan(int n) {
   // Your code here
+  if (n % 2 != 0) {
+    return ((n - 1) / 2);
+  } else {
+    return n / 2;
+  }
 }
 
 /**
@@ -48,4 +61,9 @@ int oddsSmallerThan(int n) {
  */
 int squareOrDouble(int n) {
   // Your code here
+  if (n % 2 == 0) {
+    return n * 2;
+  } else {
+    return n * n;
+  }
 }
